@@ -18,8 +18,8 @@ function ChartsComponent() {
 
     useEffect(() => {
         let now = new Date();
-        console.log(dayByID[now.getDay()])
         setToday(dayByID[now.getDay()]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
